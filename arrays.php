@@ -8,15 +8,19 @@
 
     asort($nombres);
 
+    echo 'Array en orden alfabético: ';
+
     print_r($nombres);
 
     echo '<br>';
+
+    echo 'Array en orden inverso: ';
 
     print_r(array_reverse($nombres));
 
     echo '<br>';
 
-    echo array_search('Carmen', $nombres) . '<br>';
+    echo 'Posición de mi nombre' . array_search('Carmen', $nombres) . '<br>';
 
     $alumnos = [
         [
@@ -34,7 +38,16 @@
             'nombre' => 'Ari',
             'edad' => 20,
         ],
-    ]
+    ];
+
+    echo 'Nombres: ';
+    print_r(array_column($alumnos, 'nombre'));
+    echo '<br>';
+
+    $numeros = [15, 75, 93, 12, 34, 1, 23, 6, 1, 10];
+
+    echo 'Suma: ' . array_sum($numeros);
+
 ?>
 
 <!DOCTYPE html>
@@ -59,9 +72,3 @@
     </table>
 </body>
 </html>
-
-<?php
-
-    
-
-?>
