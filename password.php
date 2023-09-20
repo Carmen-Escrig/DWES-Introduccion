@@ -19,15 +19,17 @@ function rand_Pass($upper = 1, $lower = 5, $numeric = 3, $other = 2) {
     }
 
     while ($other != 0) {
-        $password[] = chr(rand(32, 47));
+        $password[] = chr(rand(33, 47));
         $other --;
     }
 
     shuffle($password);
 
-    echo implode('', $password);
+    return implode('', $password);
 }
 
-rand_Pass();
+$pass = rand_Pass();
+
+echo $pass;
 
 ?>
