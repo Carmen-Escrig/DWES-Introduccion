@@ -129,7 +129,7 @@ if (isset($_POST["submit"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
 
     <?php if (isset($_POST["submit"]) && empty($errors)) : ?>
 
-        <h2>Mostrar datos enviados</h2>
+        <h2>Datos enviados</h2>
 
         Nombre : <?= $name ?? "" ?> <br>
         Email : <?= $mail ?? "" ?> <br>

@@ -16,5 +16,4 @@
         imagepng(imagecreatefrompng('/home/alumno/Imágenes/prohibido.png'));
     }
     
-
-?>
+?> 
