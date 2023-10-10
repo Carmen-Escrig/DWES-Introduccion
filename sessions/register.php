@@ -66,7 +66,8 @@ if (isset($_POST["submit"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
             $errorMsg = $e->getMessage();
             if (strpos($errorMsg, "users.username") !== false) {
                 $errors[] = "Ya existe un usuario con ese nombre.";
-            } else if (strpos($errorMsg, "users.email") !== false) {
+            } 
+            if (strpos($errorMsg, "users.email") !== false) {
                 $errors[] = "Ya existe un usuario con ese email.";
             }
         }
